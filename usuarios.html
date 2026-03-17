@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gestion de Usuarios</title>
+        <link rel="stylesheet"href="css/style.css">
+    </head>
+
+    <body>
+
+        <h1>Gestion de Usuarios</h1>
+
+        <input type="text" id="nombre"placeholder="Nombre">
+        <input type="text" id="documento"placeholder="Documento">
+        <input type="text" id="telefono"placeholder="Teléfono">
+        <input type="text" id="placa"placeholder="Placa">
+
+        <button onclick="registrarUsuario()">Registrar</button>
+
+        <h2>Lista de Usuarios</h2>
+
+        <table border="1">
+
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Documento</th>
+                    <th>Teléfono</th>
+                    <th>Placa</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+
+            <tbody id="tablaUsuarios"></tbody>
+                <!-- Aquí se agregarán los usuarios registrados -->
+        </table>
+
+        <script src="js/usuarios.js"></script>
+
+    </body>
+</html>

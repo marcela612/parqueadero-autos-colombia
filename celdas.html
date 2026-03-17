@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gestion de celdas</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        
+        <h1>Gestion de celdas</h1>
+
+        <input type="number" id="numeroCelda" placeholder="Numero de Celda">
+
+        <button onclick="registrarCelda()">Registrar Celda</button> 
+
+        <h2>Celdas</h2>
+
+        <table border="1">
+
+        <thead>
+
+            <tr>
+                <th>Número</th>
+                <th>Estado</th>
+                <th>Acción</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="tablaCeldas"></tbody>
+            <!-- Aquí se agregarán las celdas registradas -->
+
+        </table>
+
+        <script src="js/celdas.js"></script>
+
+    </body>
+    </html>

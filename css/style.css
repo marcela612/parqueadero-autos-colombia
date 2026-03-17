@@ -1,3 +1,7 @@
+/* =====================================
+    RESET Y CONFIGURACIÓN GENERAL
+===================================== */
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,7 +9,10 @@ body {
     min-height: 100vh;
 }
 
-/* TITULO */
+/* =====================================
+    ENCABEZADO (TÍTULO)
+===================================== */
+
 header {
     text-align: center;
     padding: 30px;
@@ -17,10 +24,13 @@ header h1 {
     font-size: 32px;
 }
 
-/* CONTENEDOR */
+/* =====================================
+    CONTENEDOR PRINCIPAL
+===================================== */
+
 .container {
     width: 500px;
-    margin: auto;
+    margin: 30px auto; /* mejora centrado vertical */
     background: white;
     padding: 25px;
     border-radius: 10px;
@@ -28,16 +38,30 @@ header h1 {
     text-align: center;
 }
 
-/* INPUTS */
-input, select {
+/* =====================================
+    FORMULARIOS (INPUTS Y SELECT)
+===================================== */
+
+input,
+select {
     width: 90%;
     padding: 10px;
     margin: 10px 0;
     border-radius: 6px;
     border: 1px solid #ccc;
+    outline: none;
 }
 
-/* BOTONES */
+/* Efecto al hacer clic */
+input:focus,
+select:focus {
+    border-color: #007bff;
+}
+
+/* =====================================
+    BOTONES
+===================================== */
+
 button {
     padding: 10px 20px;
     margin: 8px;
@@ -47,18 +71,25 @@ button {
     color: white;
     cursor: pointer;
     font-size: 14px;
+    transition: 0.3s;
 }
 
 button:hover {
     background: #0056b3;
 }
 
-/* MENU */
+/* =====================================
+    MENÚ DE NAVEGACIÓN
+===================================== */
+
 .menu {
     margin-top: 15px;
 }
 
-/* TABLA */
+/* =====================================
+    TABLAS
+===================================== */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -76,9 +107,22 @@ td {
     border-bottom: 1px solid #ddd;
 }
 
+/* Filas alternadas (mejora visual leve sin cambiar diseño) */
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* =====================================
+    ENLACES
+===================================== */
+
 a {
     display: block;
     margin-top: 15px;
     color: #007bff;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
