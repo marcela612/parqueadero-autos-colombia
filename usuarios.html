@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Gestion de Usuarios</title>
-        <link rel="stylesheet"href="css/style.css">
-    </head>
+<head>
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <body>
+<body>
 
-        <h1>Gestion de Usuarios</h1>
+<header>
+    <h1>Gestión de Usuarios</h1>
+</header>
 
-        <input type="text" id="nombre"placeholder="Nombre">
-        <input type="text" id="documento"placeholder="Documento">
-        <input type="text" id="telefono"placeholder="Teléfono">
-        <input type="text" id="placa"placeholder="Placa">
+<div class="container">
 
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="documento" placeholder="Documento">
+    <input type="text" id="telefono" placeholder="Teléfono">
+    <input type="text" id="placa" placeholder="Placa">
+
+    <div class="botones">
         <button onclick="registrarUsuario()">Registrar</button>
+    </div>
 
-        <h2>Lista de Usuarios</h2>
+    <div class="botones">
+        <a href="index.html" class="btn-volver">← Volver</a>
+    </div>
 
-        <table border="1">
+    <h2>Lista de Usuarios</h2>
 
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Documento</th>
-                    <th>Teléfono</th>
-                    <th>Placa</th>
-                    <th>Acción</th>
-                </tr>
-            </thead>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Documento</th>
+                <th>Teléfono</th>
+                <th>Placa</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
 
-            <tbody id="tablaUsuarios"></tbody>
-                <!-- Aquí se agregarán los usuarios registrados -->
-        </table>
+        <tbody id="tablaUsuarios"></tbody>
+    </table>
 
-        <script src="js/usuarios.js"></script>
+</div>
 
-    </body>
+<script src="js/usuarios.js"></script>
+
+</body>
 </html>
