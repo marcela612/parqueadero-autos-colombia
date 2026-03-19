@@ -1,7 +1,7 @@
 let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
 /* =========================
-   REGISTRAR USUARIO
+    REGISTRAR USUARIO
 ========================= */
 
 function registrarUsuario() {

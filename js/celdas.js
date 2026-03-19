@@ -1,7 +1,7 @@
 let celdas = JSON.parse(localStorage.getItem("celdas")) || [];
 
 /* =========================
-   REGISTRAR CELDA
+    REGISTRAR CELDA
 ========================= */
 
 function registrarCelda() {
@@ -35,7 +35,7 @@ function registrarCelda() {
 }
 
 /* =========================
-   MOSTRAR CELDAS
+    MOSTRAR CELDAS
 ========================= */
 
 function mostrarCeldas() {
@@ -57,9 +57,9 @@ function mostrarCeldas() {
             </td>
 
             <td>
-                <button onclick="ocuparCelda(${index})">Ocupar</button>
-                <button onclick="liberarCelda(${index})">Liberar</button>
-                <button onclick="eliminarCelda(${index})">Eliminar</button>
+                <button class="btn-tabla" onclick="ocuparCelda(${index})">Ocupar</button>
+                <button class="btn-tabla" onclick="liberarCelda(${index})">Liberar</button>
+                <button class="btn-tabla" onclick="eliminarCelda(${index})">Eliminar</button>
             </td>
         </tr>
         `;
@@ -67,7 +67,7 @@ function mostrarCeldas() {
 }
 
 /* =========================
-   OCUPAR CELDA
+    OCUPAR CELDA
 ========================= */
 
 function ocuparCelda(index) {
@@ -85,7 +85,7 @@ function ocuparCelda(index) {
 }
 
 /* =========================
-   LIBERAR CELDA
+    LIBERAR CELDA
 ========================= */
 
 function liberarCelda(index) {
@@ -103,7 +103,7 @@ function liberarCelda(index) {
 }
 
 /* =========================
-   ELIMINAR CELDA
+    ELIMINAR CELDA
 ========================= */
 
 function eliminarCelda(index) {
@@ -118,7 +118,7 @@ function eliminarCelda(index) {
 }
 
 /* =========================
-   LIMPIAR INPUT
+    LIMPIAR INPUT
 ========================= */
 
 function limpiarInput() {
@@ -126,7 +126,7 @@ function limpiarInput() {
 }
 
 /* =========================
-   INICIO
+    INICIO
 ========================= */
 
 mostrarCeldas();

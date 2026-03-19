@@ -1,5 +1,5 @@
 /* =====================================
-   RESET Y CONFIGURACIÓN GENERAL
+    RESET Y CONFIGURACIÓN GENERAL
 ===================================== */
 
 * {
@@ -15,7 +15,7 @@ body {
 }
 
 /* =====================================
-   ENCABEZADO (TÍTULO)
+    ENCABEZADO (TÍTULO)
 ===================================== */
 
 header {
@@ -29,11 +29,11 @@ header h1 {
 }
 
 /* =====================================
-   CONTENEDOR PRINCIPAL (MEJORADO)
+    CONTENEDOR PRINCIPAL (MEJORADO)
 ===================================== */
 
 .container {
-    max-width: 600px;      /* más pequeño*/
+    max-width: 700px;      /* adaptable*/
     width: 90%;             /* adaptable */
     margin: 37px auto;      /* centrado */
     background: white;    /* color */
@@ -43,7 +43,7 @@ header h1 {
 }
 
 /* =====================================
-   TÍTULOS INTERNOS
+    TÍTULOS INTERNOS
 ===================================== */
 
 .container h1,
@@ -53,7 +53,7 @@ header h1 {
 }
 
 /* =====================================
-   FORMULARIOS
+    FORMULARIOS
 ===================================== */
 
 .formulario {
@@ -80,12 +80,13 @@ select:focus {
 }
 
 /* =====================================
-   BOTONES
+    BOTONES
 ===================================== */
 
 button {
-    padding: 10px 20px;
-    margin: 8px 5px;
+    width: 220px;   /* mismo ancho para todos */
+    padding: 12px;
+    margin: 0;      /* quitamos márgenes desiguales */
     border: none;
     border-radius: 6px;
     background: #007bff;
@@ -99,17 +100,40 @@ button:hover {
     background: #0056b3;
 }
 
+/* BOTONES DE TABLA (PEQUEÑOS) */
+
+.btn-tabla {
+    width: auto;           /* clave */
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 2px;
+}
+
 /* =====================================
-   MENÚ
+    CONTENEDOR DE BOTONES (CLAVE)
 ===================================== */
 
-.menu {
-    text-align: center;
+.botones-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
     margin-top: 15px;
 }
 
 /* =====================================
-   TABLAS (MEJORADAS)
+    MENÚ
+===================================== */
+
+.menu {
+    display: flex;
+    flex-direction: column;   /* uno debajo del otro */
+    align-items: center;      /* centrados */
+    gap: 15px;                /* espacio entre botones */
+    margin-top: 15px;
+}
+/* =====================================
+    TABLAS (MEJORADAS)
 ===================================== */
 
 table {
@@ -137,39 +161,21 @@ tr:nth-child(even) {
     background: #f9f9f9;
 }
 
-/* =====================================
-   ENLACES
-===================================== */
+/* BOTÓN VOLVER COMO BOTÓN REAL */
 
-a {
-    display: block;
-    margin-top: 15px;
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* CONTENEDOR DE BOTONES */
-.botones {
+.btn-volver {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-/* BOTÓN VOLVER COMO BOTÓN REAL */
-.btn-volver {
-    padding: 10px 20px;
+    align-items: center;
+    width: 220px;
+    height: 44px;
     background: #6c757d;
-    color: white;
+    color: white !important;
     border-radius: 6px;
     text-decoration: none;
     font-size: 14px;
+    margin: 0;
 }
-
 .btn-volver:hover {
     background: #545b62;
 }
