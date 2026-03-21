@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestión de Pagos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Gestión de Pagos</h1>
+</header>
+
+<div class="container">
+
+    <!-- Selección de usuario -->
+    <select id="usuarioPago">
+        <option value="">Seleccionar Usuario</option>
+    </select>
+
+    <!-- Valor en COP -->
+    <input type="text" id="valor" placeholder="Valor en pesos (COP)">
+
+    <!-- Método -->
+    <select id="metodo">
+        <option value="">Método de Pago</option>
+        <option value="Efectivo">Efectivo</option>
+        <option value="Transferencia">Transferencia</option>
+    </select>
+
+    <!-- Contenedor para mostrar número de cuenta si se selecciona transferencia -->
+    <div id="cuentaContainer" style="display:none; text-align:center; margin-top:10px;">
+    <p><strong>Número de cuenta:</strong> 1234567890</p>
+    <p><strong>Banco:</strong> Bancolombia</p>
+</div>
+
+    <!-- Botones -->
+    <div class="botones">
+        <button onclick="registrarPago()">Guardar</button>
+        <a href="index.html" class="btn-volver"> ←Volver</a>
+    </div>
+
+    <h2>Lista de Pagos</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Usuario</th>
+                <th>Valor</th>
+                <th>Método</th>
+                <th>Fecha</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaPagos"></tbody>
+    </table>
+
+</div>
+
+<script src="js/pagos.js"></script>
+
+</body>
+</html>

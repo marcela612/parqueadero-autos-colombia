@@ -41,7 +41,7 @@ function registrarUsuario() {
 }
 
 /* =========================
-   MOSTRAR USUARIOS
+    MOSTRAR USUARIOS
 ========================= */
 
 function mostrarUsuarios() {
@@ -68,7 +68,7 @@ function mostrarUsuarios() {
 }
 
 /* =========================
-   ELIMINAR USUARIO
+    ELIMINAR USUARIO
 ========================= */
 
 function eliminarUsuario(index) {
@@ -83,7 +83,7 @@ function eliminarUsuario(index) {
 }
 
 /* =========================
-   LIMPIAR FORMULARIO
+    LIMPIAR FORMULARIO
 ========================= */
 
 function limpiarFormulario() {
@@ -94,7 +94,7 @@ function limpiarFormulario() {
 }
 
 /* =========================
-   INICIO
+    INICIO
 ========================= */
 
 mostrarUsuarios();

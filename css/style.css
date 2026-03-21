@@ -179,3 +179,33 @@ tr:nth-child(even) {
 .btn-volver:hover {
     background: #545b62;
 }
+
+/* PAGOS */
+#usuarioPago,
+#valor,
+#metodo {
+    width: 100%;
+}
+
+#tablaPagos td {
+    font-size: 14px;
+}
+
+/* efecto hover tabla */
+tr:hover {
+    background: #f1f1f1;
+}
+
+/* botones alineados */
+.botones {
+    display: flex;
+    flex-direction: column; /*  IMPORTANTE */
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+button,
+.btn-volver {
+    min-width: 120px;
+    text-align: center;
+}
